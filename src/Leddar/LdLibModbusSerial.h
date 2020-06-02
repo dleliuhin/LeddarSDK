@@ -48,6 +48,7 @@ namespace LeddarConnection
         virtual bool        IsVirtualCOMPort( void ) override;
 
         static std::vector<LdConnectionInfo *> GetDeviceList( void );
+        static LdConnectionInfo * GetDevice( std::string path, int baud );
 
     protected:
         modbus_t                *mHandle;
