@@ -490,7 +490,7 @@ LeddarConnection::LdLibModbusSerial::GetDeviceList( void )
 LeddarConnection::LdConnectionInfo *
 LeddarConnection::LdLibModbusSerial::GetDevice( std::string path, int baud )
 {
-    new LdConnectionInfoModbus( path, path, baud, LdConnectionInfoModbus::MB_PARITY_NONE, 8, 1, 1 );
+    return new LdConnectionInfoModbus( path, path, baud, LdConnectionInfoModbus::MB_PARITY_NONE, 8, 1, 1 );
 }
 
 
