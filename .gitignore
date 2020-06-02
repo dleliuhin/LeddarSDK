@@ -26,3 +26,6 @@
 *.bkl
 doc/
 unifdef.bat
+
+*.save
+*.swp
